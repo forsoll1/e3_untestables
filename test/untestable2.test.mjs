@@ -39,8 +39,9 @@ describe("diceRoll tests", () => {
       arr2.push(diceRoll())
     }
     for (let i = 0; i < 20; i++) {
-      arr3.push(diceRoll())}
-    expect(arr2).to.not.equal(arr3);
+      arr3.push(diceRoll())
+    }
+    expect(arr2).to.not.deep.equal(arr3);
   });
 
 });
